@@ -1,0 +1,11 @@
+x = int(input("Enter yout time:"))
+if x<10:
+    print("Good Morning")
+elif x<13 :
+    print("soon for lunch")
+elif x<18:
+    print("Good Day")
+elif x<19 :
+    print("Good evening")
+else:
+    print("Good Night")
