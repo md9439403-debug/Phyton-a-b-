@@ -1,0 +1,17 @@
+n= int(input(" Enter the Marks:"))
+if n> 100 :
+       print("Dont be over samart")
+elif n>= 80 :
+       print("A+")
+elif n>= 70 :
+       print ("A")
+elif n>= 60 :
+       print ("A-")
+elif n>= 50 :
+       print ("C")
+elif n>= 40 :
+       print ("B")
+elif n>= 33 :
+       print ("C")
+else :
+       print(" You are fail")
