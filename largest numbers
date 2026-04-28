@@ -1,0 +1,12 @@
+a= int(input("Enter the value of a :"))
+b= int(input("Enter the value of a :"))
+c= int(input("Enter the value of a :"))
+if a>b :
+       if a>c :
+         print(a," Is the largest number")
+       else :
+        print (c, " Is the largest number")
+elif b>c :
+       print (b, " Is the largest number")
+else :
+       print (c, " Is the largest number")
