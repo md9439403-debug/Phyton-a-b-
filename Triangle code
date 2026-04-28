@@ -1,0 +1,10 @@
+import math
+a= int(input(" Enter the value= "))
+b = int(input(" Enter the value= "))
+c = int(input(" Enter the value= "))
+if (a+b)>c and (c+a)>b and (b+c)>a :
+        s= (a+b+c)/2
+        Area = math.sqrt(s*(s-a)*(s-b)*(s-c))
+        print("The area of the triagle is :", Area)
+else:
+        print("Triagle is not possible")
