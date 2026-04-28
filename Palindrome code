@@ -1,0 +1,7 @@
+word = ("707")
+word = word.casefold()
+reversed_word = word[::-1]
+if word== reversed_word :
+    print(word,"is a palindrome")
+else :
+    print(word, "isn't a palindrome")
