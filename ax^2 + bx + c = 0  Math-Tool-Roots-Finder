@@ -1,0 +1,14 @@
+import math
+a = int(input("Enter your value:"))
+b = int(input("Enter your value:"))
+c = int(input("Enter your value:"))
+d= (b**2)-(4*a*c)
+if(d==0):
+    x=(-b/(2*a))
+    print("Roots is a real value:",x)
+elif d>0 :
+    x1=((-b+math.sqrt(d))/(2*a))
+    x2=((-b-math.sqrt(d))/(2*a))
+    print("Roots are real value:",x1,"and", x2)
+else:
+        print("Roots are imagenary number")
