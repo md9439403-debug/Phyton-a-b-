@@ -1,0 +1,5 @@
+def infity_sum(*num):
+    sum = 0
+    for i in num :
+        sum = sum + i
+    return sum
