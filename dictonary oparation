@@ -1,0 +1,7 @@
+d= { 'Jihad' : 1000,
+      'Jajab' : 1100,
+      'goa' : 1200,
+    }
+for i in D :
+    d[i]= d[i]+200
+print(d)
