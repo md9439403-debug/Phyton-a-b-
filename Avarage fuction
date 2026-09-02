@@ -1,0 +1,6 @@
+def avarage(*num):
+    a= 0
+    for i in num:
+       a = a + i
+    result= a/len(num)
+    return result
