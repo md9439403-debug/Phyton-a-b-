@@ -1,0 +1,14 @@
+import logging
+logging.basicConfig(filename='test.log', level=logging.DEBUG,
+                    format='%(asctime)s - %(levelname)s - %(message)s')
+
+num1 = int (input("Enter a number: "))
+num2 = int (input("Enter another number: "))
+logging.info("user input: num1 = %s, num2 = %s", num1, num2)
+try:
+    result = num1 / num2
+    print("The result is:", result)
+    logging.info("The result is: %s", result)
+except Exception as e:
+    print("An error occurred:", e)
+    logging.error("An error occurred: %s", e)
