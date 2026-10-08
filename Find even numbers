@@ -1,0 +1,8 @@
+def extract_even(list):
+    even= []
+    for i in list:
+        if i%2 == 0:
+            even.append(i)
+    return even
+nums = [1,35,3,2,2,6,7,8,9,11]
+print("Even numbers is :",extract_even(nums))
