@@ -1,0 +1,14 @@
+def palindrome(word):
+    reverse_word = ""
+    for i in word:
+        reverse_word = i + reverse_word
+    if word == reverse_word:
+        return True
+    else:
+        return False
+
+w = input("Enter your word:")
+if palindrome(w):
+    print("Word is palindrome ")
+else:
+    print("Word is not palindrome")
