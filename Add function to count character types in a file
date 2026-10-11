@@ -1,0 +1,17 @@
+def programe_capital():
+    with open("file.txt", "r") as f:
+        data = f.read()
+    count_capital = 0
+    count_lower = 0
+    count_digits = 0
+    for i in data :
+        if i.islower():
+            count_lower = count_lower +1
+        if i.isupper():
+            count_capital = count_capital + 1
+        if i.isdigit():
+            count_digits = count_digits + 1
+    print("Total Capital case number is :",count_capital)
+    print("Total lower case number is :", count_lower)
+    print("Total digit number is :",count_digits)
+programe_capital()
