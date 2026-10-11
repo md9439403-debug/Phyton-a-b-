@@ -1,0 +1,13 @@
+def upper():
+    file= open("file.txt", "r")
+    New = open("upper.txt", "w")
+    for line in file:
+        New.write(line.upper())
+    file.close()
+    New.close()
+    print("Converted to Upper case.....")
+    f = open("upper.txt", "r")
+    print(f.read())
+    f.close()
+
+upper()
