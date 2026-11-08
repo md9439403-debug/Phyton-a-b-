@@ -1,0 +1,12 @@
+import csv
+with open("user.csv","w",newline="") as file:
+    write = csv.writer(file)
+    write.writerow(["username", "password"])
+    write.writerow(["Zihad", "zihad#12"])
+    write.writerow(["Mahin", "password"])
+    write.writerow(["hakim", "pword"])
+
+with open("user.csv","r") as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        print(row["username"], row["password"])
