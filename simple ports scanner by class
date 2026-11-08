@@ -1,0 +1,10 @@
+class portscanner:
+    def __init__(self, target_ip, ports: list):
+        self.target_ip = target_ip
+        self.ports = ports
+
+    def show_info(self):
+        print(f"Target: {self.target_ip} Ports to scan :{self.ports}")
+
+scan = portscanner("198.168.1.1", [20, 80, 443])
+scan.show_info()
