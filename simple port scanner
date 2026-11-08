@@ -1,0 +1,13 @@
+import json
+config = {
+    "ip":"192.168.1.5",
+    "ports":[20,80,443],
+    "scan_type":"TCP"
+}
+with open("ihad.json","w") as file:
+    json.dump(config,file,indent=4)
+
+with open("ihad.json","r") as f:
+    data = json.load(f)
+    for i in data["ports"]:
+        print(f"scanning port number {i}....")
